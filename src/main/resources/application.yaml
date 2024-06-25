@@ -1,0 +1,15 @@
+app:
+  scheduler:
+    delay: 5
+
+server:
+  port: 8088
+
+vk:
+  vk-api-key: ${VK_API_KEY}
+  vk-api-version: ${VK_API_VERSION}
+  vk-api-url: "https://api.vk.com"
+  vk-unread-message-url: "/method/messages.getConversations?filter=unread&count=%d&access_token=%s&v=%s"
+  vk-send-message-url: "/method/messages.send?access_token=%s&peer_id=%d&random_id=%d&message=%s&v=%s"
+  message-count: 20
+
